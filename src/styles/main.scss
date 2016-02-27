@@ -25,7 +25,12 @@ $statistics-color: $accent-black;
 body {
   background: $main-bg-color;    
   color: $accent-black;
+  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;      /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;   /* MID: IE 10 */
+  display: -webkit-flex;  /* NEW, Chrome 21?28, Safari 6.1+ */
   display: flex;
+  -webkit-justify-content: space-around; /* Safari 6.1+ */
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
@@ -60,7 +65,12 @@ h3 {
 
 .project-container {
   position: relative;
+  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;      /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;   /* MID: IE 10 */
+  display: -webkit-flex;  /* NEW, Chrome 21?28, Safari 6.1+ */
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
   background-color: $project-container-color;
   height: auto;
@@ -180,8 +190,9 @@ h3 {
 .project-info {
   padding: 0 2vh 2vh 2vh;
   background-color: $color-snow;
+  -webkit-flex: 0 2 auto;
+  -ms-flex: 0 2 auto;
   flex: 0 2 auto;
-  height: 100%;
 }
 
 .github-info {
@@ -260,15 +271,21 @@ ul.nav{
 }
 
 .tech-icon-container {
+  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;      /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;   /* MID: IE 10 */
+  display: -webkit-flex;  /* NEW, Chrome 21?28, Safari 6.1+ */
   display: flex;
   font-size: 2rem;
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .tech-icon {
-  margin-left: 5px;
-  height: 2em;
+  margin-left: 0.2em;
+  margin-right: 1em;
+  height: 2rem;
 }
 
 .statistics {
