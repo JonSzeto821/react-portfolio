@@ -1,9 +1,59 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CUSTOM STARTS BELOW */
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
 @import url(https://fonts.googleapis.com/css?family=Bitter);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,8700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
-@import "defaults";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 $main-bg-color: #faf1d5;
 $main-bg-color: #2E2E38;
@@ -26,31 +76,40 @@ $header-background-color: #BF7444;
 $statistics-background-color: $color-snow;
 $statistics-color: $accent-black;
 
+
 body {
   background: $main-bg-color;    
   color: $accent-black;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 3em;
 }
 
 h2 {
-  @media only screen and (max-device-width: 600px) {
-    font-size: 5rem;
-  } 
-}
-
-
-h3 {
-  @media only screen and (max-device-width: 600px) {
-    font-size: 4rem;
-  } 
+  font-weight: 700;
+  font-size: 200%;
+  margin: 1rem 0 1rem 0;
 }
 
 .projects-title {
-  background:white; 
+  color: white;
+  text-align: center;
+  font-size: 300%;
+  margin-bottom: 0;
+  font-family: Montserrat, sans-serif;
+
+
+  
+
+  background: #F09819; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F09819 , #EDDE5D); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F09819 , #EDDE5D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
+        
+        
 }
 
 .projects-container {
-  font-size: 2em;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   color: $color-snow;
@@ -60,26 +119,27 @@ h3 {
 .project-container {
   position: relative;
   background-color: $project-container-color;
+  background-color: #25adff;
   height: auto;
-  padding: 5vh 5vw 5vh 5vw;
+  padding: 10vh 15px 15px 15px;
   margin-bottom: 4vh;
+  font-size: 200%;
 }
 
 .screenshot-container {
-  width: 30em;
+  width: 90vw;
   background-color: rgba(0,0,0,0);
   margin: 0 auto 0 auto;
 }
 
 .screenshot-container img {
-  width: 30em;
+  width: 90vw;
   margin: 0 auto 0 auto;
 }
 
 
 .iphone {
   background: $color-snow;
-  border: solid 2px $color-silver;
   border-radius: 24px;
   margin: 0 auto;
   @include transition(all .4s $ease-in-circ);
@@ -89,7 +149,7 @@ h3 {
     top: 20vh;
   }
   @media only screen and (max-device-width: 800px) {
-    display: none;
+    display: inline;
   }
 }
 
@@ -112,7 +172,7 @@ h3 {
       margin: 0 auto;
       border-radius: 50%;
       top: 30px;
-      margin-top: .5vh;
+      margin-top: 50px;
       cursor: pointer;
     }
 
@@ -158,8 +218,6 @@ h3 {
 
 .project-info {
   padding: 0 2vh 2vh 2vh;
-  -webkit-flex: 0 2 auto;
-  -ms-flex: 0 2 auto;
   flex: 0 2 auto;
 }
 
@@ -252,7 +310,7 @@ ul.nav{
 .tech-icon {
   margin-left: 0.2em;
   margin-right: 1em;
-  height: 2rem;
+  height: 1em;
 }
 
 .statistics {

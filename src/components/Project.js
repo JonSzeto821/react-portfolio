@@ -21,9 +21,8 @@ export default class Project extends Component {
           </div>
         </div>
         <div className="project-info">
-          
-          <h2><a href={project.project_url} target="_blank">{project.title}</a></h2>
-          
+          <h2>{project.title}</h2>
+          <a href={project.project_url} target="_blank">Link</a>
           <a href={project.github_url} target="_blank">
             {project.github_url !== '' ? 'Github' : null}
           </a>
