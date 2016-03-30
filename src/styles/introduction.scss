@@ -1,0 +1,120 @@
+@import "defaults";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
+
+.introduction {
+  margin-top: 40vh;
+  width: 100vw;
+  font-size: 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+.deco-layer--4 {
+  fill: white;
+  animation: color-fade-main 20s infinite;
+}
+
+@keyframes color-fade-main {
+  0% { fill: #2C7744; }
+  25% { fill: #76b852; }
+  50% { fill: #fffc0c; }
+  75% { fill: #5A3F37; }
+  100% { fill: #2C7744; }
+}
+
+.deco-layer--2 {
+  fill: white;
+  animation: color-fade 10s infinite;
+}
+
+@keyframes color-fade {
+  0% { fill: #9a5342; }
+  25% { fill: #fffc0c; }
+  50% { fill: #e46d00; }
+  75% { fill: #ff3506; }
+  100% { fill: #9a5342; }
+}
+
+.deco-layer--1 {
+  fill: white;
+  animation: color-fade-1 5s linear infinite;
+}
+
+@keyframes color-fade-1 {
+  0% { fill: #fffc0c; }
+  25% { fill: #9a5342; }
+  50% { fill: #e46d00; }
+  75% { fill: #ff3506; }
+  100% { fill: #fffc0c; }
+}
+
+.introduction__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.introduction__name {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Montserrat",sans;
+  color: white;
+}
+
+.introduction__icons i:hover {
+  color: red;
+}
+
+.introduction__icons i {
+  color: white;
+}
+
+.introduction__icons i {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.hills {
+  padding-top: 35vh;
+}
+
+.sun-layer {
+  height: 10vh;  
+}
+
+.sun {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: orange;
+  border-radius: 100%;
+  animation: move 60s linear infinite;
+  box-shadow: -2px 2px 30px 5px rgba(255,255,255,0.15);
+}
+
+.sun-2 {
+  @extend .sun;
+  width: 10px;
+  height: 10px;
+  animation: move-3 1s linear infinite;
+}
+
+@keyframes move {
+    0% { left: 80%; top: 10%; }
+   25% { left: 55%; top: 20%; }
+   50% { left: 40%; top: 30%; }
+   75% { left:  25%; top: 40%; }
+  100% { left: 20%; top: 50%; }
+}
+
+@keyframes move-2 {
+    0% { left: 50%; top: -100%; }
+   25% { left: 60%; top: 20%; }
+   50% { left: 70%; top: 30%; }
+   75% { left:  80%; top: 40%; }
+  100% { left: 100%; top: 50%; }
+}

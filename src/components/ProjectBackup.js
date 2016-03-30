@@ -17,7 +17,8 @@ export default class Project extends Component {
       <div className="project-container">
         <div className="image-container" >
           <div className="screenshot-container">
-            { project.gfycat1 ? <div className="gfyitem" data-id="SilkyNextIrishwolfhound" ></div> : <img src={project.desktop_image}/> }
+            { project.gfycat ? <div className="gfyitem" data-id="SilkyNextIrishwolfhound" ></div> : <img src={project.desktop_image}/> }
+            { project.mobile_image !== '' ? <Mobile image={project.mobile_image}/> : null }
           </div>
         </div>
         <div className="project-info">
@@ -27,10 +28,14 @@ export default class Project extends Component {
           <a href={project.github_url} target="_blank">
             {project.github_url !== '' ? 'Github' : null}
           </a>
-          <h5>Tech Stack</h5>
+          <div>{project.date}</div>
+          <h3>Background</h3>
+          <div>{project.background}</div>
+          <h3>Role</h3>
+          <div>{project.role}</div>
+          <h3>Tech Stack</h3>
           <div className="tech-icon-container">{techStackItems}</div>
         </div>
-            { project.mobile_image !== '' ? <Mobile image={project.mobile_image}/> : null }
       </div>
     );
   }

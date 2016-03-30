@@ -4,9 +4,12 @@ import { connect } from 'react-redux';
 import * as BenchmarkActions from '../actions/BenchmarkActions';
 import Project from '../components/Project';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Statistics from '../components/Statistics';
+import Introduction from '../components/Introduction';
+import Hills from '../components/Hills';
+import Sun from '../components/Sun';
 import { startTime } from '../index';
+import '../styles/parallax.scss';
+import '../styles/main.scss';
 
 /**
  * It is common practice to have a 'Root' container/component require our main App (this one).
@@ -25,14 +28,28 @@ export default class App extends Component {
       return <Project key={index} project={project} />;
     });
     // we can use ES6's object destructuring to effectively 'unpack' our props
+        // <Header personalInfo={personalInfo} />
     return (
-      <div className="main-app-container">
-        <Header personalInfo={personalInfo} />
-        <Statistics benchmark={benchmark} />
-        <div className="main-app-nav">Selected Projects</div>
-        {/* notice that we then pass those unpacked props into the Counter component */}
-          {projectEntries}
-        <Footer personalInfo={personalInfo} />
+      <div className="main-app-container parallax">
+        <div className="parallax-group">
+          <div className="parallax-layer parallax__layer--base">
+            <Introduction personalInfo={personalInfo} />
+          </div>
+          <div className="parallax-layer parallax__layer--back-1">
+            <Sun />
+          </div>
+          <div className="parallax-layer parallax__layer--back-2">
+            <Hills />
+          </div>
+        </div>
+        <div className="parallax-group">
+          <div className="projects-container parallax__layer--base">
+            <div className="projects-title">Selected Projects</div>
+            {/* notice that we then pass those unpacked props into the Counter component */}
+              {projectEntries}
+            <Footer personalInfo={personalInfo} />
+          </div>
+        </div>
       </div>
     );
   }

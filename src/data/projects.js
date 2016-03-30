@@ -8,7 +8,7 @@ const projectsData = {
       github_url: 'https://github.com/Quadraticpancake/matchme',
       project_url: 'http://matchme1.herokuapp.com/',
       background: 'MatchMe is a gamified dating web application wherein users act as matchmakers instead of browsing for themselves. Fun for both those on and off the dating market, MatchMe lets users choose matches for other random compatible users by selecting which of the two candidates is the best match for that person. Players earn points for making matches and can spend points within the game. If a pair gets matched enough they have the ability to chat and like each other. The application also includes a multi-player voting mode and an algorithmic recommendation engine that analyzes facial characteristics of matches a user liked to offer them other potential matches.',
-      role: 'I designed the majority of the database schemas and optimized for scalability with thorough normalization and efficient queries. I implemented the chat system and the multiplayer mode with Websockets/Node.js on the backend and React/Redux on the frontend.',
+      role: 'I designed the majority of the database schemas and optimized for scalability with thorough normalization and efficient queries. I implemented the chat system and the multiplayer mode with Websockets/Node.js on the backend and React/Redux on the frontend. To improve user experience, I debounced user inputs and built a responsive layout.',
       tech_stack: ['React.js', 'socket.io', 'Redux', 'PostgreSQL', 'Node.js', 'express']
     },
     {
@@ -30,7 +30,7 @@ const projectsData = {
       date: '2016',
       github_url: 'https://gist.github.com/jchen85/56a529040826528072a0',
       project_url: 'https://bl.ocks.org/jchen85/raw/56a529040826528072a0/',
-      background: 'This was an experiment in recursion and graph databases.',
+      background: 'This was an experiment in recursion and graph databases using the Twitter API.',
       role: 'I used a Node.js script to recursively traverse the friends network of a target user. To avoid repeatedly exceeding Twitter\'s rate limit, I designed and implemented a queueing system to throttle requests to Twitter\'s API. My script would queue up callbacks, each of which were ready to grab the next level of friends. Before letting the callbacks fire, the script would check Twitter to be sure I was below the rate limit.\rNext, I processed the data and inserted it into a neo4j graph database. Finally, I rendered the relationships using D3, Leaflet.js, and Arc.js.',
       tech_stack: ['neo4j', 'd3.js', 'Leaflet', 'Node.js']
     },
@@ -40,7 +40,7 @@ const projectsData = {
       title: 'Restauranteur',
       date: '2015',
       github_url: 'https://github.com/jchen85/restauranteur',
-      project_url: 'https://github.com/jchen85/restauranteur',
+      project_url: 'http://107.170.214.235:3000/#/landing',
       background: 'Restauranteur provides a fun and gamified way to pick a restaurant from the Yelp search results. Two restaurants are displayed side by side, and the user has 5 seconds to pick one. At the end, the winner of the restaurant "tournament" is calculated using the Elo rating formula.',
       role: 'I designed and built this app using AngularJS, Node.js, express, and MongoDB.',
       tech_stack: ['MongoDB', 'express', 'AngularJS', 'Node.js']
