@@ -54,6 +54,7 @@ table {
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
 
 $main-bg-color: #faf1d5;
 $main-bg-color: #2E2E38;
@@ -80,7 +81,7 @@ $statistics-color: $accent-black;
 body {
   background: $main-bg-color;    
   color: $accent-black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Slab', 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 3em;
 }
@@ -89,136 +90,6 @@ h2 {
   font-weight: 700;
   font-size: 200%;
   margin: 1rem 0 1rem 0;
-}
-
-.projects-title {
-  color: white;
-  text-align: center;
-  font-size: 300%;
-  margin-bottom: 0;
-  font-family: Montserrat, sans-serif;
-
-
-  
-
-  background: #F09819; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #F09819 , #EDDE5D); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F09819 , #EDDE5D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-          
-        
-        
-}
-
-.projects-container {
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  color: $color-snow;
-}
-
-
-.project-container {
-  position: relative;
-  background-color: $project-container-color;
-  background-color: #25adff;
-  height: auto;
-  padding: 10vh 15px 15px 15px;
-  margin-bottom: 4vh;
-  font-size: 200%;
-}
-
-.screenshot-container {
-  width: 90vw;
-  background-color: rgba(0,0,0,0);
-  margin: 0 auto 0 auto;
-}
-
-.screenshot-container img {
-  width: 90vw;
-  margin: 0 auto 0 auto;
-}
-
-
-.iphone {
-  background: $color-snow;
-  border-radius: 24px;
-  margin: 0 auto;
-  @include transition(all .4s $ease-in-circ);
-  right: 2em;
-  top: 1em;
-  @media screen and (max-width: 1000px) {
-    top: 20vh;
-  }
-  @media only screen and (max-device-width: 800px) {
-    display: inline;
-  }
-}
-
-.iphone-inner {
-  background: $color-snow;
-  border: solid 2px $color-silver-dark;
-  height: 48vh;
-  width: 24vh;
-  border-radius: 24px;
-  position: relative;
-  margin: 0 auto;
-  box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.75);
-  @include transition(all .4s $ease-in-circ);
-    .circ-button {
-      background: $color-snow;
-      border: solid 2px #3b3b3b;
-      width: 3vh;
-      height: 3vh;
-      position: relative;
-      margin: 0 auto;
-      border-radius: 50%;
-      top: 30px;
-      margin-top: 50px;
-      cursor: pointer;
-    }
-
-  .camera {
-    @include linear-gradient(#1f1f1f, #141414);
-    position: relative;
-    width: 1vh;
-    height: 1vh;
-    border-radius: 50%;
-    border: solid 1px $color-silver;
-    top: 1vh;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .oval {
-    @include linear-gradient(#1f1f1f, #141414);
-    width: 32px;
-    height: 3px;
-    top: 11px;
-    border-radius: 2px;
-    margin: 0 auto;
-    margin-bottom: -9.6px;
-    position: relative;
-  }
-}
-
-.screen {
-  position: relative;
-  width: 22vh;
-  height: 38vh;
-  margin: 0 auto;
-  top: 4vh;
-  overflow: hidden;
-  @include linear-gradient(#1f1f1f, #141414);
-  border: solid 2px #3b3b3b;@include transition(all .4s $ease-in-circ);
-}
-
-.screen img {
-  width: 21.5vh;
-  height: 38vh;
-}
-
-.project-info {
-  padding: 0 2vh 2vh 2vh;
-  flex: 0 2 auto;
 }
 
 .github-info {

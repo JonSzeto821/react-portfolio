@@ -1,0 +1,97 @@
+
+$main-bg-color: #faf1d5;
+$main-bg-color: #2E2E38;
+$accent-blue: #37bbe4;
+$accent-gray: #e1e0dd;
+$accent-black: #35342f;
+$accent-orange: #ec6b2d;
+$accent-red: #dd6464;
+$project-container-color: #ece9df;
+
+@import "bourbon";
+$color-snow: #fff;
+$color-silver: #c5c5c5;
+$color-silver-dark: #b4b4b4;
+
+$header-text-color: white;
+$header-background-color: rgba(17,40,45, 0.9);
+$header-background-color: #BF7444;
+
+$statistics-background-color: $color-snow;
+$statistics-color: $accent-black;
+
+
+.iphone {
+  background: $color-snow;
+  border-radius: 24px;
+  margin: 0 auto;
+  height: 76vh;
+  width: 41vh;
+}
+
+.iphone-inner {
+  height: 76vh;
+  width: 41vh; 
+  background: $color-snow;
+  border: solid 2px $color-silver-dark;
+  border-radius: 24px;
+  position: absolute;
+  box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.75);
+  @include transition(all .4s $ease-in-circ);
+    .circ-button {
+      background: $color-snow;
+      border: solid 2px #3b3b3b;
+      width: 3vh;
+      height: 3vh;
+      position: relative;
+      margin: 12% auto;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+  .camera {
+    @include linear-gradient(#1f1f1f, #141414);
+    position: relative;
+    width: 1vh;
+    height: 1vh;
+    border-radius: 50%;
+    border: solid 1px $color-silver;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .oval {
+    @include linear-gradient(#1f1f1f, #141414);
+    width: 32px;
+    height: 3px;
+    top: 1.5%;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: -9.6px;
+    position: relative;
+  }
+}
+.small-top-circle {
+  @include linear-gradient(#1f1f1f, #141414);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 6px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.screen {
+  position: relative;
+  width: 39vh;
+  height: 66vh;
+  margin: 0 auto;
+  top: 4vh;
+  overflow: hidden;
+  @include linear-gradient(#1f1f1f, #141414);
+  border: solid 2px #3b3b3b;@include transition(all .4s $ease-in-circ);
+}
+
+.screen img {
+  width: 70vw;
+}

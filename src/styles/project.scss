@@ -1,0 +1,42 @@
+
+.projects-container {
+  text-align: left;
+  color: white;
+}
+
+
+.project-container {
+  position: relative;
+  background-color: #25adff;
+  height: auto;
+  padding: 10vh 15px 15px 15px;
+  margin-bottom: 4vh;
+  font-size: 200%;
+}
+
+.project-info {
+  text-align: center;
+  padding: 0 2vh 2vh 2vh;
+  flex: 0 2 auto;
+  h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+.project-intro {
+  margin-bottom: 4vh;
+}
+
+.screenshot-container {
+  width: 90vw;
+  background-color: rgba(0,0,0,0);
+  margin: 0 auto 0 auto;
+}
+
+.screenshot-container img {
+  width: 90vw;
+}
+
+

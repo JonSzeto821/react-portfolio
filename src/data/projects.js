@@ -7,6 +7,7 @@ const projectsData = {
       date: '2016',
       github_url: 'https://github.com/Quadraticpancake/matchme',
       project_url: 'http://matchme1.herokuapp.com/',
+      tagline: 'React/Redux-based dating app with real time chat and multiplayer',
       background: 'MatchMe is a gamified dating web application wherein users act as matchmakers instead of browsing for themselves. Fun for both those on and off the dating market, MatchMe lets users choose matches for other random compatible users by selecting which of the two candidates is the best match for that person. Players earn points for making matches and can spend points within the game. If a pair gets matched enough they have the ability to chat and like each other. The application also includes a multi-player voting mode and an algorithmic recommendation engine that analyzes facial characteristics of matches a user liked to offer them other potential matches.',
       role: 'I designed the majority of the database schemas and optimized for scalability with thorough normalization and efficient queries. I implemented the chat system and the multiplayer mode with Websockets/Node.js on the backend and React/Redux on the frontend. To improve user experience, I debounced user inputs and built a responsive layout.',
       tech_stack: ['React.js', 'socket.io', 'Redux', 'PostgreSQL', 'Node.js', 'express']
