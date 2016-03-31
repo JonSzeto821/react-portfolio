@@ -97,15 +97,24 @@
 }
 
 .tech-icon-container {
-  text-align: center;
   display: flex;
   flex-flow: row wrap;
 }
 
-
+.tech-icon-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background: white;
+  color: black;
+  border-radius: 2px;
+  margin: 2px 2px;
+  padding: 2px;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-weight: 600;
+}
 
 .tech-icon {
-  margin-left: 0.2em;
-  margin-right: 1em;
-  height: 1em;
+  margin: auto auto auto 5px;
+  height: 1.5em;
 }

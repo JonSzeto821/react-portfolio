@@ -57,6 +57,9 @@ body {
   font-size: 16px;
   line-height: 3em;
   @media #{$desktop} { 
+    font-size: 10px;
+  }
+  @media #{$desktop-big} { 
     font-size: 12px;
   }
 }
@@ -118,7 +121,7 @@ ul.nav{
 }
 
 .hide-when-small {
-  @media screen and (max-width: 800px) {
+  @media #{$desktop} {
     display: none;
   }
 }
@@ -136,7 +139,7 @@ ul.nav{
 .footer_icon {
   height: 18px;
   width: auto;
-  @media only screen and (max-device-width: 600px) {
+  @media #{$desktop} {
     height: 5rem;
   }
 }
@@ -151,7 +154,7 @@ ul.nav{
 
 .navbar-brand {
   line-height: normal;
-  @media only screen and (max-device-width: 600px) {
+  @media #{$desktop} {
     font-size: 3rem;
   } 
 }

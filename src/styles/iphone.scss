@@ -38,6 +38,7 @@
       @media #{$desktop} { 
         width: 25px;
         height: 25px;
+        top: -55px;
       }
     }
 
@@ -52,6 +53,9 @@
     margin-right: auto;
     top: 30px;
     left: -30px;
+    @media #{$desktop} { 
+      top: 17px;
+    }
   }
 
   .oval {

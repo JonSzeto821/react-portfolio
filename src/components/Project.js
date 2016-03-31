@@ -23,6 +23,9 @@ export default class Project extends Component {
           <div className="project-intro">
             <h2>{project.title}</h2>
             { project.tagline }
+            <ul className="tech-icon-container">
+              {techStackItems}
+            </ul>
           </div>
           { project.mobile_image !== '' ? <Mobile image={project.mobile_image}/> :
           <div className="desktop-screenshot-container no-mobile">
@@ -41,10 +44,6 @@ export default class Project extends Component {
           <div className="project-details">
             {project.role}
           </div>
-          <h5>Tech Stack</h5>
-          <ul className="tech-icon-container">
-            {techStackItems}
-          </ul>
         </div>
       </div>
     );
