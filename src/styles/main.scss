@@ -20,7 +20,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -48,48 +47,23 @@ table {
 }
 
 /* CUSTOM STARTS BELOW */
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
-@import url(https://fonts.googleapis.com/css?family=Bitter);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,8700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
-
-$main-bg-color: #faf1d5;
-$main-bg-color: #2E2E38;
-$accent-blue: #37bbe4;
-$accent-gray: #e1e0dd;
-$accent-black: #35342f;
-$accent-orange: #ec6b2d;
-$accent-red: #dd6464;
-$project-container-color: #ece9df;
-
-@import "bourbon";
-$color-snow: #fff;
-$color-silver: #c5c5c5;
-$color-silver-dark: #b4b4b4;
-
-$header-text-color: white;
-$header-background-color: rgba(17,40,45, 0.9);
-$header-background-color: #BF7444;
-
-$statistics-background-color: $color-snow;
-$statistics-color: $accent-black;
-
+@import 'defaults';
 
 body {
   background: $main-bg-color;    
   color: $accent-black;
   font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 3em;
+  @media #{$desktop} { 
+    font-size: 12px;
+  }
 }
 
 h2 {
   font-weight: 700;
   font-size: 200%;
-  margin: 1rem 0 1rem 0;
 }
 
 .github-info {
@@ -100,7 +74,7 @@ h2 {
 }
 
 footer {
-  font-size: 0.75em;
+  font-size: 75%;
   text-align: center;
   padding-top: 5vh;
 
@@ -167,23 +141,6 @@ ul.nav{
   }
 }
 
-.tech-icon-container {
-  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
-  display: -moz-box;      /* OLD: Firefox (buggy) */
-  display: -ms-flexbox;   /* MID: IE 10 */
-  display: -webkit-flex;  /* NEW, Chrome 21?28, Safari 6.1+ */
-  display: flex;
-  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.tech-icon {
-  margin-left: 0.2em;
-  margin-right: 1em;
-  height: 1em;
-}
-
 .statistics {
   background-color: $statistics-background-color;
   color: $statistics-color;
@@ -197,8 +154,4 @@ ul.nav{
   @media only screen and (max-device-width: 600px) {
     font-size: 3rem;
   } 
-}
-
-.gfyVid {
-  width: 33vw;
 }

@@ -15,27 +15,36 @@ export default class Project extends Component {
     });
 
     return (
-      <div className="project-container">
-        <div className="project-info">
+      <div className="project-container" style={{background: project.background_color}}>
+        <div className="desktop-screenshot-container">
+          { project.gfycat ? <div className="gfyitem" data-id="SilkyNextIrishwolfhound" ></div> : <img src={project.desktop_image}/> }
+        </div>
+        <div className="project-body">
           <div className="project-intro">
             <h2>{project.title}</h2>
             { project.tagline }
           </div>
-          { project.mobile_image !== '' ? <Mobile image={project.mobile_image}/> : null }
-          <a href={project.project_url} target="_blank">
-            View project
-            <i className="fa fa-external-link-square"></i>
-          </a>
-          <a href={project.github_url} target="_blank">
-            {project.github_url !== '' ? 'Github' : null}
-          </a>
-          <h5>Tech Stack</h5>
-          <div className="tech-icon-container">{techStackItems}</div>
-        </div>
-        <div className="image-container" >
-          <div className="screenshot-container">
-            { project.gfycat1 ? <div className="gfyitem" data-id="SilkyNextIrishwolfhound" ></div> : <img src={project.desktop_image}/> }
+          { project.mobile_image !== '' ? <Mobile image={project.mobile_image}/> :
+          <div className="desktop-screenshot-container no-mobile">
+            { project.gfycat ? <div className="gfyitem" data-id="SilkyNextIrishwolfhound"></div> : <img src={project.desktop_image}/> }
+          </div> }
+          <ul className="project-links">
+            <a href={project.project_url} target="_blank">
+              <li>View project
+              <i className="fa fa-external-link-square"></i></li>
+            </a>
+            <a href={project.github_url} target="_blank">
+              <li>Github
+              <i className="fa fa-external-link-square"></i></li>
+            </a>
+          </ul>
+          <div className="project-details">
+            {project.role}
           </div>
+          <h5>Tech Stack</h5>
+          <ul className="tech-icon-container">
+            {techStackItems}
+          </ul>
         </div>
       </div>
     );

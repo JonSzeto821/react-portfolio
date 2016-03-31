@@ -1,6 +1,7 @@
 const projectsData = {
   data: [
     {
+      background_color: '#7300e6',
       desktop_image: require('./screenshots/MatchMeimgur.jpg'),
       mobile_image: require('./screenshots/MatchMemobileimgur.png'),
       title: 'MatchMe',
@@ -13,6 +14,7 @@ const projectsData = {
       tech_stack: ['React.js', 'socket.io', 'Redux', 'PostgreSQL', 'Node.js', 'express']
     },
     {
+      background_color: '#25adff',
       desktop_image: 'https://fat.gfycat.com/ElatedNastyGerbil.webm',
       mobile_image: require('./screenshots/Qmobileimgur.png'),
       gfycat: 'SilkyNextIrishwolfhound',
@@ -20,11 +22,13 @@ const projectsData = {
       date: '2015',
       github_url: 'https://github.com/QMusicPlayer/Q',
       project_url: 'http://qplayer.herokuapp.com/',
+      tagline: 'A social event-focused music player that lets anyone be the DJ',
       background: 'Have you ever been at a party and wished it was easier for you and your friends to choose the host\'s music? Q solves this problem by offering shared playlists that can be accessed in the browser (no app download required) by everyone at the party. While the host has ultimate control over which song is playing, guests can search Soundcloud for songs and queue them up. Guests can also vote on which song plays next.',
       role: 'I designed this application for scalability. I used Websockets to synchronize the playlists between the host and the clients in real time. On the client side, I modified the open source Angular-SoundManager2 to send and receive socket events. Node.js was a natural choice for the backend because of its ability to send thousands of Websocket messages per second.',
       tech_stack: ['AngularJS', 'socket.io', 'Ionic', 'MongoDB', 'Node.js']
     },
     {
+      background_color: '#e6ac00',
       desktop_image: require('./screenshots/MapAppimgur.jpg'),
       mobile_image: '',
       title: 'MapApp',
@@ -36,6 +40,7 @@ const projectsData = {
       tech_stack: ['neo4j', 'd3.js', 'Leaflet', 'Node.js']
     },
     {
+      background_color: '#57d781',
       desktop_image: require('./screenshots/Restauranteurimgur.jpg'),
       mobile_image: '',
       title: 'Restauranteur',
