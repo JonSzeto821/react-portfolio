@@ -41,7 +41,7 @@ const projectsData = {
       tech_stack: ['neo4j', 'd3.js', 'Leaflet', 'Node.js']
     },
     {
-      background_color: '#cc6633',
+      background_color: '#00CC66',
       desktop_image: require('./screenshots/Restauranteurimgur.jpg'),
       mobile_image: '',
       title: 'Restauranteur',
