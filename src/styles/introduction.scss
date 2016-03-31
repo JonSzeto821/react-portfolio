@@ -104,11 +104,11 @@
 }
 
 @keyframes move {
-    0% { left: 80%; top: 10%; }
-   25% { left: 65%; top: 20%; }
-   50% { left: 50%; top: 30%; }
-   75% { left:  35%; top: 40%; }
-  100% { left: 20%; top: 50%; }
+    0% { left: 80%; top: 10%; background-color: orange; }
+   25% { left: 65%; top: 20%; background-color: white; }
+   50% { left: 50%; top: 30%; background-color: orange; }
+   75% { left:  35%; top: 40%; background-color: white; }
+  100% { left: 20%; top: 50%; background-color: orange; }
 }
 
 @keyframes move-2 {

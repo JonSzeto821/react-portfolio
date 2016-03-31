@@ -62,6 +62,15 @@ body {
   @media #{$desktop-big} { 
     font-size: 12px;
   }
+  animation: background-cycle 60s linear infinite;
+}
+
+@keyframes background-cycle {
+  0% { background: $main-bg-color; }
+  25% { background: #0099FF; }
+  50% { background: #2E2E38; }
+  75% { background: #0099FF; }
+  100% { background: $main-bg-color; }
 }
 
 h2 {
