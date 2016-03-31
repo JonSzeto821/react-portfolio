@@ -17,11 +17,12 @@ export default class Project extends Component {
     return (
       <div className="project-container" style={{background: project.background_color}}>
         <div className="desktop-screenshot-container">
-          { project.gfycat ? <video className="gfyVid" controls>
-  <source src={`https://fat.gfycat.com/${project.gfycat}.mp4`} type="video/mp4" />
-  <source src={`https://fat.gfycat.com/${project.gfycat}.webm`} type="video/webm" />
-  Your browser does not support the video tag.
-</video> : <img src={project.desktop_image}/> }
+          { project.gfycat ?
+            <video className="gfyVid" controls>
+              <source src={`https://fat.gfycat.com/${project.gfycat}.mp4`} type="video/mp4" />
+              <source src={`https://fat.gfycat.com/${project.gfycat}.webm`} type="video/webm" />
+              Your browser does not support the video tag.
+            </video> : <img src={project.desktop_image}/> }
         </div>
         <div className="project-body">
           <div className="project-intro">
