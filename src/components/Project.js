@@ -34,7 +34,7 @@ export default class Project extends Component {
           </div>
           { project.mobile_image !== '' ? <Mobile image={project.mobile_image}/> :
           <div className="desktop-screenshot-container no-mobile">
-            { project.gfycat ? <div className="gfyitem" data-id="SilkyNextIrishwolfhound"></div> : <img src={project.desktop_image}/> }
+            { <img src={project.desktop_image}/> }
           </div> }
           <ul className="project-links">
             <a href={project.project_url} target="_blank">
