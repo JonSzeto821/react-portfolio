@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 
 export default class Footer extends Component {
   render() {
-    const { personalInfo } = this.props;
     return (
       <footer>
         <span id="footer-text-wrap">
-        Built by {personalInfo.name}.
+        This site is a constant work in progress. <a href="https://github.com/jchen85/react-portfolio/tree/jaychen">Check out the repo!</a>
         </span>
       </footer>
     );

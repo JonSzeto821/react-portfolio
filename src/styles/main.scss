@@ -77,16 +77,15 @@ h2 {
 }
 
 footer {
-  font-size: 75%;
   text-align: center;
   padding-top: 5vh;
 
   a {
     text-decoration: none;
-    color: inherit;
+    color: $accent-blue;
 
     &:hover {
-      color: $accent-blue;
+      color: $accent-red;
     }
   }
 

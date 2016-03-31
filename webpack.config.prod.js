@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const bourbon = require('node-bourbon').includePaths;
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   devtool: 'source-map',
@@ -45,12 +46,13 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: 'style!css!sass?includePaths[]=' + bourbon
+        loader: 'style!css!postcss-loader!sass?includePaths[]=' + bourbon
       },
       { 
         test: /\.(png|jpg)$/,
         loader: 'url-loader?limit=8192'
       }
     ]
-  }
+  },
+  postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ]
 };

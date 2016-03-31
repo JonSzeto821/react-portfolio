@@ -28,25 +28,27 @@ const projectsData = {
       tech_stack: ['AngularJS', 'socket.io', 'Ionic', 'MongoDB', 'Node.js']
     },
     {
-      background_color: '#e6ac00',
+      background_color: '#60112D',
       desktop_image: require('./screenshots/MapAppimgur.jpg'),
       mobile_image: '',
       title: 'MapApp',
       date: '2016',
       github_url: 'https://gist.github.com/jchen85/56a529040826528072a0',
       project_url: 'https://bl.ocks.org/jchen85/raw/56a529040826528072a0/',
+      tagline: 'A data analysis project using graph theory',
       background: 'This was an experiment in recursion and graph databases using the Twitter API.',
-      role: 'I used a Node.js script to recursively traverse the friends network of a target user. To avoid repeatedly exceeding Twitter\'s rate limit, I designed and implemented a queueing system to throttle requests to Twitter\'s API. My script would queue up callbacks, each of which were ready to grab the next level of friends. Before letting the callbacks fire, the script would check Twitter to be sure I was below the rate limit.\rNext, I processed the data and inserted it into a neo4j graph database. Finally, I rendered the relationships using D3, Leaflet.js, and Arc.js.',
+      role: 'I used a Node.js script to traverse the friends network of a target Twitter user. To avoid repeatedly exceeding Twitter\'s rate limit, I designed and implemented a queueing system to throttle requests to Twitter\'s API. My script would queue up callbacks, each of which were ready to grab the next level of friends. Before letting the callbacks fire, the script would check Twitter to be sure I was below the rate limit.\rNext, I processed the data and inserted it into a neo4j graph database. Finally, I rendered the relationships using D3, Leaflet.js, and Arc.js.',
       tech_stack: ['neo4j', 'd3.js', 'Leaflet', 'Node.js']
     },
     {
-      background_color: '#57d781',
+      background_color: '#cc6633',
       desktop_image: require('./screenshots/Restauranteurimgur.jpg'),
       mobile_image: '',
       title: 'Restauranteur',
       date: '2015',
       github_url: 'https://github.com/jchen85/restauranteur',
       project_url: 'http://107.170.214.235:3000/#/landing',
+      tagline: 'Gamifies the process of deciding on a restaurant',
       background: 'Restauranteur provides a fun and gamified way to pick a restaurant from the Yelp search results. Two restaurants are displayed side by side, and the user has 5 seconds to pick one. At the end, the winner of the restaurant "tournament" is calculated using the Elo rating formula.',
       role: 'I designed and built this app using AngularJS, Node.js, express, and MongoDB.',
       tech_stack: ['MongoDB', 'express', 'AngularJS', 'Node.js']

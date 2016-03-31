@@ -46,7 +46,6 @@ export default class App extends Component {
         <div className="parallax-group">
           <ProjectsContainer />
         </div>
-        <Footer personalInfo={personalInfo} />
       </div>
     );
   }
