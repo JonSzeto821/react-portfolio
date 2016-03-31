@@ -92,7 +92,7 @@
   height: 60px;
   background-color: orange;
   border-radius: 100%;
-  animation: move 60s linear infinite;
+  animation: move 30s linear infinite;
   box-shadow: -2px 2px 30px 5px rgba(255,255,255,0.15);
 }
 
@@ -104,10 +104,10 @@
 }
 
 @keyframes move {
-    0% { left: 80%; top: 10%; background-color: orange; }
-   25% { left: 65%; top: 20%; background-color: white; }
-   50% { left: 50%; top: 30%; background-color: orange; }
-   75% { left:  35%; top: 40%; background-color: white; }
+    0% { left: 75%; top: 10%; background-color: orange; }
+   25% { left: 60%; top: 20%; background-color: white; }
+   50% { left: 45%; top: 30%; background-color: orange; }
+   75% { left:  30%; top: 40%; background-color: white; }
   100% { left: 20%; top: 50%; background-color: orange; }
 }
 
