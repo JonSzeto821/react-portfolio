@@ -17,7 +17,7 @@ const projectsData = {
       background_color: '#25adff',
       desktop_image: 'https://fat.gfycat.com/ElatedNastyGerbil.webm',
       mobile_image: require('./screenshots/Qmobileimgur.png'),
-      gfycat: 'SilkyNextIrishwolfhound',
+      gfycat: 'https://fat.gfycat.com/SilkyNextIrishwolfhound.webm',
       title: 'Q',
       date: '2015',
       github_url: 'https://github.com/QMusicPlayer/Q',

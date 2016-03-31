@@ -17,7 +17,10 @@ export default class Project extends Component {
     return (
       <div className="project-container" style={{background: project.background_color}}>
         <div className="desktop-screenshot-container">
-          { project.gfycat ? <div className="gfyitem" data-id="SilkyNextIrishwolfhound" ></div> : <img src={project.desktop_image}/> }
+          { project.gfycat ? <video className="gfyVid" controls>
+  <source src={project.gfycat} type="video/mp4" />
+  Your browser does not support the video tag.
+</video> : <img src={project.desktop_image}/> }
         </div>
         <div className="project-body">
           <div className="project-intro">
