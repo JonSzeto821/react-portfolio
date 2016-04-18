@@ -11,7 +11,19 @@ const projectsData = {
       tagline: 'React/Redux-based dating app with real time chat and multiplayer',
       background: 'MatchMe is a gamified dating web application wherein users act as matchmakers instead of browsing for themselves. Fun for both those on and off the dating market, MatchMe lets users choose matches for other random compatible users by selecting which of the two candidates is the best match for that person. Players earn points for making matches and can spend points within the game. If a pair gets matched enough they have the ability to chat and like each other. The application also includes a multi-player voting mode and an algorithmic recommendation engine that analyzes facial characteristics of matches a user liked to offer them other potential matches.',
       role: 'I designed the majority of the database schemas and optimized for scalability with thorough normalization and efficient queries. I implemented the chat system and the multiplayer mode with Websockets/Node.js on the backend and React/Redux on the frontend. To improve user experience, I debounced user inputs and built a responsive layout.',
-      tech_stack: ['React.js', 'socket.io', 'Redux', 'PostgreSQL', 'Node.js', 'express']
+      tech_stack: ['React.js', 'socket.io', 'Redux', 'PostgreSQL', 'Node.js', 'express', 'Sass', 'Webpack']
+    },
+    {
+      background_color: '#800000',
+      desktop_image: require('./screenshots/FitQuest.png'),
+      mobile_image: '',
+      title: 'FitQuest (prototype)',
+      date: '2016',
+      project_url: 'http://107.170.214.235:4000/',
+      tagline: 'UI prototype for a team-based gamified fitness experience',
+      background: 'MatchMe is a gamified dating web application wherein users act as matchmakers instead of browsing for themselves. Fun for both those on and off the dating market, MatchMe lets users choose matches for other random compatible users by selecting which of the two candidates is the best match for that person. Players earn points for making matches and can spend points within the game. If a pair gets matched enough they have the ability to chat and like each other. The application also includes a multi-player voting mode and an algorithmic recommendation engine that analyzes facial characteristics of matches a user liked to offer them other potential matches.',
+      role: 'FitQuest is a solo project I built primarily to demonstrate my evolving UI design abilities. Although it utilizes a Node back end and a RethinkDB database, it is not a fully functioning application (yet).',
+      tech_stack: ['React.js', 'socket.io', 'Redux', 'RethinkDB', 'Node.js', 'express', 'Docker', 'Sass', 'Webpack']
     },
     {
       background_color: '#25adff',

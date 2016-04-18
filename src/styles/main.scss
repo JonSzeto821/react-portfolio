@@ -49,6 +49,11 @@ table {
 /* CUSTOM STARTS BELOW */
 @import 'defaults';
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: $main-bg-color;    
   color: $accent-black;

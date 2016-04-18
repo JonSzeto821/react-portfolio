@@ -10,7 +10,11 @@ const iconsData = {
   neo4j: 'https://avatars3.githubusercontent.com/u/218965?v=3&s=200',
   'd3.js': 'https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Logo_D3.svg/1079px-Logo_D3.svg.png',
   Leaflet: 'http://leafletjs.com/docs/images/logo.png',
-  Redux: 'https://rawgit.com/gorangajic/react-icons/master/react-icons.svg'
+  Redux: 'https://rawgit.com/gorangajic/react-icons/master/react-icons.svg',
+  RethinkDB: 'https://api.jujucharms.com/charmstore/v4/~adam-stokes/trusty/rethinkdb-slave-4/icon.svg',
+  Docker: 'https://d3oypxn00j2a10.cloudfront.net/0.7.0/img/homepage/docker-whale-home-logo.png',
+  Webpack: 'http://reapp.io/images/webpack.svg',
+  Sass: 'http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png'
 };
 
 export { iconsData };

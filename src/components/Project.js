@@ -41,10 +41,12 @@ export default class Project extends Component {
               <li>View project
               <i className="fa fa-external-link-square"></i></li>
             </a>
-            <a href={project.github_url} target="_blank">
-              <li>Github
-              <i className="fa fa-external-link-square"></i></li>
-            </a>
+            {project.github_url ? 
+              <a href={project.github_url} target="_blank">
+                <li>Github
+                <i className="fa fa-external-link-square"></i></li>
+              </a>
+            : null }
           </ul>
           <div className="project-details">
             {project.role}
